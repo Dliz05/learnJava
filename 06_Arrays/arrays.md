@@ -595,7 +595,7 @@ public class Main {
         hondaColors.add("Blue");
         Car honda = new Car("Honda", hondaColors);
  
-        // Deep copy of Honda
+        //Deep copy of Honda
         Car deepcopyHonda = new Car(
             honda.name, new ArrayList<>(honda.colors));
         deepcopyHonda.colors.add("Green");
@@ -610,6 +610,7 @@ public class Main {
         System.out.println();
  
         // Shallow Copy of Honda
+	
         Car copyHonda = honda;
         copyHonda.colors.add("Green");
         System.out.print("Shallow Copy: ");
